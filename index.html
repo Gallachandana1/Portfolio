@@ -6,10 +6,13 @@
   <title>Galla Chandana | Data Analyst & Business Analytics</title>
   <meta name="description" content="Portfolio of Galla Chandana - Data Analyst, Business Analytics, Python, SQL, Power BI, Machine Learning" />
   <link rel="icon" href="profile.jpg" type="image/jpeg" />
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <script>
     tailwind.config = {
@@ -40,6 +43,9 @@
       70% { box-shadow: 0 0 0 20px rgba(34, 211, 238, 0); }
       100% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0); }
     }
+    .glow-avatar {
+      animation: pulseRing 3s infinite;
+    }
     .glass {
       background: rgba(15, 23, 42, 0.8);
       backdrop-filter: blur(16px);
@@ -66,12 +72,14 @@
 </head>
 <body class="bg-[#0b1120] text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-900 min-h-screen">
 
+  <!-- BACKGROUND DECORATIONS -->
   <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
     <div class="absolute -top-40 -right-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
     <div class="absolute top-1/2 -left-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
     <div class="absolute -bottom-40 right-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl"></div>
   </div>
 
+  <!-- NAVIGATION -->
   <header class="fixed top-0 left-0 right-0 z-50 glass">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
       <a href="#home" class="flex items-center gap-3 group">
@@ -84,6 +92,7 @@
         </div>
       </a>
 
+      <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center gap-1 bg-slate-900/60 p-1.5 rounded-full border border-slate-800/80 text-sm font-medium">
         <a href="#home" class="px-3.5 py-1.5 rounded-full hover:text-cyan-400 hover:bg-slate-800/80 transition-all text-slate-300">Home</a>
         <a href="#about" class="px-3.5 py-1.5 rounded-full hover:text-cyan-400 hover:bg-slate-800/80 transition-all text-slate-300">About</a>
@@ -93,6 +102,7 @@
         <a href="#education" class="px-3.5 py-1.5 rounded-full hover:text-cyan-400 hover:bg-slate-800/80 transition-all text-slate-300">Education</a>
       </nav>
 
+      <!-- Action Button -->
       <div class="hidden sm:flex items-center gap-3">
         <a href="resume.pdf" download="Galla_Chandana_Resume.pdf" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-sm transition-all shadow-md shadow-cyan-500/20 hover:shadow-cyan-400/30">
           <i class="fa-solid fa-file-arrow-down"></i>
@@ -100,11 +110,13 @@
         </a>
       </div>
 
+      <!-- Mobile Menu Toggle Button -->
       <button id="mobile-toggle" aria-label="Toggle menu" class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800">
         <i class="fa-solid fa-bars text-xl"></i>
       </button>
     </div>
 
+    <!-- Mobile Dropdown -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800 bg-slate-950/95 px-4 pt-3 pb-5 space-y-2">
       <a href="#home" class="mobile-link block px-3 py-2 rounded-lg text-slate-300 hover:text-cyan-400 hover:bg-slate-900">Home</a>
       <a href="#about" class="mobile-link block px-3 py-2 rounded-lg text-slate-300 hover:text-cyan-400 hover:bg-slate-900">About</a>
@@ -113,19 +125,31 @@
       <a href="#experience" class="mobile-link block px-3 py-2 rounded-lg text-slate-300 hover:text-cyan-400 hover:bg-slate-900">Certifications</a>
       <a href="#education" class="mobile-link block px-3 py-2 rounded-lg text-slate-300 hover:text-cyan-400 hover:bg-slate-900">Education</a>
       <a href="#contact" class="mobile-link block px-3 py-2 rounded-lg text-slate-300 hover:text-cyan-400 hover:bg-slate-900">Contact</a>
+      <div class="pt-2">
+        <a href="resume.pdf" download="Galla_Chandana_Resume.pdf" class="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-lg bg-cyan-500 text-slate-950 font-semibold text-sm">
+          <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+        </a>
+      </div>
     </div>
   </header>
 
+  <!-- MAIN CONTENT CONTAINER -->
   <main class="relative z-10 pt-20">
+
+    <!-- HERO SECTION -->
     <section id="home" class="min-h-[calc(100vh-5rem)] flex items-center justify-center px-4 sm:px-6 py-12 md:py-20">
       <div class="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
+        <!-- Left Column: Intro -->
         <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
+          
+          <!-- Availability Pill -->
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono tracking-wide">
             <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
             <span>DATA ANALYST &bull; BUSINESS ANALYTICS &bull; PYTHON &bull; SQL &bull; POWER BI</span>
           </div>
 
+          <!-- Main Title -->
           <div class="space-y-2">
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
               Hi, I'm <br class="hidden sm:inline" />
@@ -137,10 +161,12 @@
             </p>
           </div>
 
+          <!-- Bio Description -->
           <p class="text-base sm:text-lg text-slate-300 max-w-xl leading-relaxed">
             Data Analytics graduate with hands-on experience in <strong class="text-cyan-400 font-medium">Python, SQL, Excel, and Power BI</strong>. Skilled in data cleaning, exploratory data analysis, visualization, and predictive modeling with a strong interest in Decision Science and Business Analytics.
           </p>
 
+          <!-- Contact Quick Info -->
           <div class="flex flex-wrap gap-4 text-xs font-mono text-slate-400 justify-center lg:justify-start pt-1">
             <a href="mailto:gallachandana123@gmail.com" class="hover:text-cyan-400 flex items-center gap-1.5">
               <i class="fa-regular fa-envelope text-cyan-400"></i> gallachandana123@gmail.com
@@ -151,6 +177,7 @@
             </a>
           </div>
 
+          <!-- Action Buttons -->
           <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
             <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-slate-950 font-bold text-sm sm:text-base shadow-lg shadow-cyan-500/25 transition-all">
               <span>View Analytics Projects</span>
@@ -166,6 +193,7 @@
             </a>
           </div>
 
+          <!-- Social Links Bar -->
           <div class="flex items-center gap-4 pt-4 border-t border-slate-800/80 w-full justify-center lg:justify-start">
             <span class="text-xs font-mono text-slate-500 uppercase tracking-wider">Profiles:</span>
             <a href="https://github.com/Gallachandana1" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-slate-900 hover:bg-cyan-500/10 border border-slate-800 hover:border-cyan-500/40 flex items-center justify-center text-slate-400 hover:text-cyan-400 transition-all" title="GitHub">
@@ -181,10 +209,13 @@
 
         </div>
 
+        <!-- Right Column: Profile Picture with Glow Effect -->
         <div class="lg:col-span-5 flex justify-center">
           <div class="relative group">
+            <!-- Animated decorative backdrop rings -->
             <div class="absolute -inset-3 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-3xl blur-xl opacity-40 group-hover:opacity-60 transition duration-500"></div>
             
+            <!-- Frame container with photo -->
             <div class="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden p-1.5 bg-gradient-to-b from-cyan-400/50 via-slate-800/80 to-indigo-500/50 shadow-2xl">
               <img 
                 src="profile.jpg" 
@@ -197,6 +228,7 @@
               </div>
             </div>
 
+            <!-- Floating Badge 1: Academic Metric -->
             <div class="absolute -bottom-4 -left-6 bg-slate-900/90 border border-cyan-500/40 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-xl flex items-center gap-2.5">
               <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-sm font-bold">
                 <i class="fa-solid fa-graduation-cap"></i>
@@ -207,6 +239,7 @@
               </div>
             </div>
 
+            <!-- Floating Badge 2: Tech Stack -->
             <div class="absolute -top-3 -right-5 bg-slate-900/90 border border-indigo-500/40 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-xl flex items-center gap-2">
               <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
               <p class="text-xs font-medium text-slate-200">Python &bull; SQL &bull; Power BI</p>
@@ -228,6 +261,8 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Narrative Left -->
           <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-2xl flex flex-col justify-between">
             <div class="space-y-4 text-slate-300 text-base leading-relaxed">
               <p>
@@ -241,6 +276,7 @@
               </p>
             </div>
 
+            <!-- Core Strengths & Traits -->
             <div class="pt-6 mt-6 border-t border-slate-700/60">
               <p class="text-xs font-mono uppercase tracking-wider text-cyan-400 mb-3 font-semibold">Core Strengths &amp; Traits</p>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-300">
@@ -264,7 +300,9 @@
             </div>
           </div>
 
+          <!-- Academic & Highlights Right -->
           <div class="lg:col-span-5 space-y-4">
+            
             <div class="glass-card p-5 rounded-2xl flex items-start gap-4">
               <div class="w-12 h-12 rounded-xl bg-cyan-500/15 text-cyan-400 flex items-center justify-center shrink-0 text-xl">
                 <i class="fa-solid fa-chart-line"></i>
@@ -304,7 +342,9 @@
                 <p class="text-sm text-slate-400">Noida (UP) team collaborator delivering rapid prototyping, feature solutions, and data presentations.</p>
               </div>
             </div>
+
           </div>
+
         </div>
       </div>
     </section>
@@ -319,6 +359,8 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Category 1: Data Analysis & Statistics -->
           <div class="glass-card p-6 rounded-2xl space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-700/60">
               <div class="w-10 h-10 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg">
@@ -339,6 +381,7 @@
             </div>
           </div>
 
+          <!-- Category 2: Data Visualization & BI -->
           <div class="glass-card p-6 rounded-2xl space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-700/60">
               <div class="w-10 h-10 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg">
@@ -359,6 +402,7 @@
             </div>
           </div>
 
+          <!-- Category 3: Machine Learning -->
           <div class="glass-card p-6 rounded-2xl space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-700/60">
               <div class="w-10 h-10 rounded-lg bg-teal-500/20 text-teal-400 flex items-center justify-center text-lg">
@@ -374,9 +418,11 @@
               <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-200 text-xs font-mono">Random Forest</span>
               <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-200 text-xs font-mono">Classification</span>
               <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-200 text-xs font-mono">Model Inference</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-200 text-xs font-mono">Feature Engineering</span>
             </div>
           </div>
 
+          <!-- Category 4: Databases & Querying -->
           <div class="glass-card p-6 rounded-2xl space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-700/60">
               <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-lg">
@@ -395,6 +441,7 @@
             </div>
           </div>
 
+          <!-- Category 5: Programming & Web -->
           <div class="glass-card p-6 rounded-2xl space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-700/60">
               <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
@@ -414,6 +461,7 @@
             </div>
           </div>
 
+          <!-- Category 6: Tools & Platforms -->
           <div class="glass-card p-6 rounded-2xl space-y-4">
             <div class="flex items-center gap-3 pb-3 border-b border-slate-700/60">
               <div class="w-10 h-10 rounded-lg bg-rose-500/20 text-rose-400 flex items-center justify-center text-lg">
@@ -431,6 +479,7 @@
               <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-slate-200 text-xs font-mono"><i class="fa-solid fa-cloud text-purple-400 mr-1"></i> Render Cloud</span>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -445,7 +494,8 @@
         </div>
 
         <div class="space-y-8">
-          <!-- Flagship Project 1 -->
+          
+          <!-- Flagship Project 1: Predictive Analytics for Student Success and Performance -->
           <div class="glass-card p-6 sm:p-8 rounded-2xl border border-cyan-500/30 relative overflow-hidden group">
             <div class="absolute top-0 right-0 px-4 py-1.5 bg-gradient-to-l from-cyan-500 to-blue-600 text-slate-950 font-bold text-xs uppercase font-mono tracking-wider rounded-bl-xl shadow-md">
               <i class="fa-solid fa-bolt mr-1"></i> Live on Render
@@ -507,11 +557,12 @@
                   <i class="fa-brands fa-github"></i>
                   <span>GitHub Repository</span>
                 </a>
+                <span class="text-xs font-mono text-slate-400 ml-auto">Live on Render Cloud</span>
               </div>
             </div>
           </div>
 
-          <!-- Project 2 -->
+          <!-- Project 2: Task Management and Productivity Tracking System -->
           <div class="glass-card p-6 sm:p-8 rounded-2xl border border-indigo-500/20 group">
             <div class="space-y-4">
               <div class="flex items-center gap-3">
@@ -532,22 +583,22 @@
                 <div class="space-y-2">
                   <p class="flex items-start gap-2">
                     <i class="fa-solid fa-check text-indigo-400 mt-1 shrink-0"></i>
-                    <span>Developed a Task Tracker web application to manage daily tasks with create, update, and delete (CRUD) functionality.</span>
+                    <span>Developed a comprehensive Task Tracker web application to manage daily tasks with create, update, and delete (CRUD) functionality.</span>
                   </p>
                   <p class="flex items-start gap-2">
                     <i class="fa-solid fa-check text-indigo-400 mt-1 shrink-0"></i>
-                    <span>Implemented backend logic using <strong>Flask</strong> to handle task operations, state transitions, and user requests.</span>
+                    <span>Implemented robust backend logic using <strong>Flask</strong> to handle task operations, state transitions, and user requests.</span>
                   </p>
                 </div>
 
                 <div class="space-y-2">
                   <p class="flex items-start gap-2">
                     <i class="fa-solid fa-check text-indigo-400 mt-1 shrink-0"></i>
-                    <span>Used <strong>SQLite database</strong> for storing task details efficiently with clean Python database operations.</span>
+                    <span>Used <strong>SQLite database</strong> for storing task details efficiently, with normalized schemas for fast queries.</span>
                   </p>
                   <p class="flex items-start gap-2">
                     <i class="fa-solid fa-check text-indigo-400 mt-1 shrink-0"></i>
-                    <span>Designed clean <strong>RESTful routes</strong> for adding, viewing, updating, and deleting tasks.</span>
+                    <span>Designed clean <strong>RESTful routes</strong> for adding, viewing, updating, and deleting tasks with reusable Python functions.</span>
                   </p>
                 </div>
               </div>
@@ -560,6 +611,37 @@
               </div>
             </div>
           </div>
+
+          <!-- Project 3: GenAI SVCET Web RAG -->
+          <div class="glass-card p-6 sm:p-8 rounded-2xl border border-teal-500/20 group">
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center text-xl shrink-0">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                    GenAI SVCET Web RAG &mdash; Intelligent College Assistant
+                  </h3>
+                  <p class="text-xs font-mono text-teal-300">
+                    Python &bull; GenAI &bull; Retrieval-Augmented Generation &bull; LangChain &bull; Vector Search
+                  </p>
+                </div>
+              </div>
+
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Engineered an intelligent Retrieval-Augmented Generation (RAG) assistant that indexes unstructured college portal content to deliver accurate, contextual answers to student queries, academic syllabi, and administrative updates.
+              </p>
+
+              <div class="flex flex-wrap items-center gap-3 pt-2">
+                <a href="https://github.com/Gallachandana1/GenAI_SVCET_Web_RAG" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-teal-300 font-medium text-sm border border-teal-500/30 transition-all">
+                  <i class="fa-brands fa-github"></i>
+                  <span>View Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -574,6 +656,8 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Column 1: Certifications -->
           <div class="space-y-4">
             <h3 class="text-xl font-bold text-white flex items-center gap-2 mb-4">
               <i class="fa-solid fa-certificate text-cyan-400"></i>
@@ -607,6 +691,7 @@
             </div>
           </div>
 
+          <!-- Column 2: Hackathon & Volunteer -->
           <div class="space-y-4">
             <h3 class="text-xl font-bold text-white flex items-center gap-2 mb-4">
               <i class="fa-solid fa-award text-yellow-400"></i>
@@ -627,6 +712,7 @@
               </ul>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -641,6 +727,8 @@
         </div>
 
         <div class="relative border-l-2 border-cyan-500/30 ml-4 sm:ml-8 space-y-8 pl-6 sm:pl-8">
+          
+          <!-- B.Tech -->
           <div class="relative group">
             <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-cyan-400 border-4 border-slate-900 group-hover:scale-125 transition-transform"></div>
             <div class="glass-card p-6 rounded-2xl">
@@ -656,6 +744,7 @@
             </div>
           </div>
 
+          <!-- Intermediate -->
           <div class="relative group">
             <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-indigo-400 border-4 border-slate-900 group-hover:scale-125 transition-transform"></div>
             <div class="glass-card p-6 rounded-2xl">
@@ -671,6 +760,7 @@
             </div>
           </div>
 
+          <!-- SSC -->
           <div class="relative group">
             <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-teal-400 border-4 border-slate-900 group-hover:scale-125 transition-transform"></div>
             <div class="glass-card p-6 rounded-2xl">
@@ -685,6 +775,7 @@
               </p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -721,6 +812,8 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          
+          <!-- Contact Info Left -->
           <div class="md:col-span-5 space-y-6">
             <div class="glass-card p-6 rounded-2xl space-y-5">
               <h3 class="text-xl font-bold text-white">Open to Opportunities!</h3>
@@ -772,6 +865,7 @@
             </div>
           </div>
 
+          <!-- Contact Form Right -->
           <div class="md:col-span-7">
             <form onsubmit="event.preventDefault(); alert('Thank you for reaching out, Chandana will respond shortly!');" class="glass-card p-6 sm:p-8 rounded-2xl space-y-4">
               <div>
@@ -816,11 +910,14 @@
               </button>
             </form>
           </div>
+
         </div>
       </div>
     </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="border-t border-slate-800/80 py-8 px-4 text-center text-slate-500 text-xs font-mono">
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
       <p>&copy; 2026 Galla Chandana. All rights reserved.</p>
@@ -831,6 +928,7 @@
     </div>
   </footer>
 
+  <!-- SCRIPTS -->
   <script>
     const toggleBtn = document.getElementById('mobile-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
